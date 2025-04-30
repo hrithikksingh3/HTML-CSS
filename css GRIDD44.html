@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 6 - Media queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar '
+                'section section section aside '
+                'footer footer footer footer';
+
+
+        }
+
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: cyan;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar '
+                    'section section section section '
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(255, 2, 200);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar '
+                    'section section section section '
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            section {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(38, 0, 255);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar '
+                    'section section section sectopm '
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: rgb(85, 255, 0);
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: aliceblue;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>services</span>
+            <span>contact</span>
+
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis eum itaque eaque. Temporibus ipsum numquam atque delectus repellat? Vitae earum quaerat nihil sapiente, perspiciatis, ipsum unde porro similique dolores illo deleniti perferendis ipsam excepturi!</h2>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright code with hrithik 2023
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in js</title>
+</head>
+
+<body>
+    <div class="contaainer">
+        This is about loops
+    </div>
+
+    <script>
+        console.log("This is a loop in js");
+        let i = 0;             
+        for(i=0; i<3; i++){        
+            console.log(i);
+        }
+
+        // Ways to iterate arrays in javascript      
+
+        let friends = ["hrithik", "shubham", "saurabh", "shiven",  "rohan", "raghavendra"];
+
+        for (let index = 0; index < friends.length; index++) {
+            console.log("Hellow friend " + friends[index]);
+        }
+
+        // MODERN WAY TO DO THIS : FOREACH LOOP    
+        friends.forEach(function f(element){
+            console.log("hellow friend " + element + " to modern js.");
+        })
+
+
+        // MODERN WAY TO DO THIS USING :  FOR_0F LOOP      
+        for (element of friends){
+            console.log("hellow friend " + element + " to modern js again.");
+        }
+
+        // Way to iterate objects in javascript      
+
+        let employee = {
+            name: "hrithik",
+            salary: 1,
+            designation: "FSWD"
+        }
+
+        // MODERN WAY TO DO THIS USING : FOR_IN LOOP
+
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+
+        // WHILE LOOP IN JS
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+        // DO WHILE LOOP IN JS
+        let j = 34;
+        do {
+            console.log(`${j} is less than 4 and we are inside do while loop.`);
+            j++;
+        }
+        while (j < 4);
+    </script>
+</body>
+
+</html>
+
+

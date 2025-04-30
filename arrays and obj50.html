@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Its and important topic.
+    </div>
+        <script>
+            // types of variables :
+            let myVar = 34;
+            let myVar2 = "string";
+            let myVar3 = true;
+            let myVar4 = null;
+            let myVar5 = undefined;
+
+            let employee = {
+                name : "hrithik",
+                salary : 500,
+                education : "btech",
+
+                "education 2" : "computer science",   
+                // employee["education 2"]    *special notation.
+                 specialization : "full stack development"
+
+            }
+            // console.log(employee);
+
+
+            // Arrays in js : ways to create -
+            // 1st way 
+            // let names = [1, 2, 4, "hrithik", undefined];
+
+            // 2nd way 
+            // let names = new Array(41,2,4,"hrithik",undefined);
+            // console.log(names);
+
+            let names = new Array(23);  //this will create an array with 23 undefined elements.
+
+            // length of array 
+            console.log(names.length);
+
+            // sorting an array 
+            names = names.sort();
+            console.log(names);
+
+            // adding an element in an array in the last
+            names.push("this is pushed");
+            console.log(names);
+
+            // deleting an element in an array from the last 
+            names.pop();
+            console.log(names)
+
+            // 
+
+
+
+
+
+        </script>
+</body>
+</html>

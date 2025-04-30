@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Css selectors</title>
+    <style>
+h1{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+/* All the p tag inside div will get affected even if the p is not a direct child of div  */
+/* div p{
+color: yellow;
+background-color: green;
+font-weight: bold;
+} */
+
+
+/* Only those p will get affected who are the direct child of div  */
+/* div > p{
+color: yellow;
+background-color: green;
+font-weight: bold;
+} */
+
+
+/* Only those p will get affected who are written just after closing div tag  */
+/* or p is next sibling of div  */
+div + p{
+color: rgb(255, 255, 255);
+background-color: rgb(255, 2, 171);
+font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside ul</p></li>
+                <li>This will not get affected</li>
+                <p>this is another para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>this is outer</p>
+</body>
+</html>

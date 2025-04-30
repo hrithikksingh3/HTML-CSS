@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Itme-1</li>
+            <li>Itme-2</li>
+            <li>Itme-3</li>
+            <li>Itme-4</li>
+            <li>Itme-5</li>
+            <li>Itme-6</li>
+            <li>Itme-7</li>
+        </ul>
+    </div>
+    <script>
+        // SCOPE OF VARIABLE : GLOBAL AND LOCAL(WITHIN THE BLOCK)
+        // var string1 = "This is a string";
+        // var string1 = "This is a string2";
+        // console.log(string1);
+        // let a = "u";
+        // {
+        //     let a = 'u6';
+        //     console.log(a)
+        //     // scope : block level 
+        // }
+        // console.log(a);
+
+        // const x = "This cannot be changed ";
+        // x = "Iwant to change this .";
+        // console.log(a);       // It will give error because constant cannot be change......😎
+
+
+        //  IF ELSE LADDER CONDITIONAL STATEMENT :
+        // let age = 17;
+        // if(age>18){
+        //     console.log("You can drink water");
+        // }
+        // else if(age==2){
+        //     console.log("you can drink milk");
+        // }
+        // else{
+        //     console.log("You can drink cold drink");
+        // }
+
+
+        // SWITCH CASE : 
+        const name =prompt("Enter any name");
+        switch (name){
+            case "shubham":
+                console.log("Shubham is a rich boi studies in Galgotias university.");
+                break;
+
+            case "shiven":
+                console.log("Shiven is richest has 15 laakh hazar crore trillion dollars.");
+                break;
+
+            case "roham":
+                console.log("Roham is sofaman and a very successful bussinessman.");
+                break;
+
+            case "saurabh":
+                console.log("Saurabh bhai is very generous person also a fitness freak and studies in Galgotias University.");
+                break;
+
+            case "hrithik":
+                console.log("Hrithik is an average boy who thinks out of the box and does not socialize easily.");
+                break;
+
+            default:
+                console.log("Bro tune jiska naam enter kiya uski details apne paas nhi hai.");
+        }
+
+    </script>
+</body>
+</html>

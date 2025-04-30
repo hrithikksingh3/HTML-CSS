@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String and string methods in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum totam ipsum ipsam, inventore dignissimos doloremque odio harum. Sequi distinctio deleniti ex vero tempore explicabo architecto in iusto incidunt sint quae sed quia accusamus, hic, natus nostrum id. Alias quaerat explicabo laborum aspernatur doloribus amet temporibus? Quibusdam veritatis cupiditate itaque facere, expedita esse nulla vel qui veniam. Accusantium dolores eveniet optio corporis!</p>
+    </div>
+    <script>
+        // var string = "this";
+        var string = 'thi"s';
+        var name = 'hrithik';
+        var channel = 'hrithik yt';
+        var message = 'hrithik is a programmer';
+        var temp = `${name} is a 'nice' perso "and" he has a channel called ${channel}`;
+        // console.log(string + name + message);
+        // console.log(temp);
+        // var len = name.length;
+        // console.log(`Length of name is ${len}`);
+
+
+        // Escape sequences :- 
+        // 1. \\ : for printing backlash 
+        // 2. \n : new line 
+        // 3. \t : add a TAB space between two characters
+        console.log("hello \\n world \n hrithik \t and")
+
+        // string using constructor :-
+        var y = new String("this");
+        console.log(y);
+
+        // Inserting a string in our DOM using js :-
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+
+    </script>
+</body>
+</html>

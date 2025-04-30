@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions properties</title>
+    <style>
+        /* CSS Positions: static(Default), relative, absolute, fixed, sticky */
+        .container {
+            border: 2px solid black;
+            background-color: antiquewhite;
+            height: 12222px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* Static means as it is like default 
+    position: static;*/
+
+            /* Relative :positions the element relative to its normal position and will leave a gap at its normal position 
+    position: relative;
+    top: 34px;
+    left: 334px;*/
+
+            /* Absolute:positions the element relative to its first parent body 
+    position: absolute;
+    top: 34px;
+    right: 34px;*/
+
+            /* Fixed: Positions the element relative to the browser window 
+    position: fixed;
+    right: 4px;
+    bottom: 2px;*/
+
+            position: sticky;
+            top: 3px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <br><br><br><br>
+    <a href="https://dillionmegida.com/post-covers/86-positioning-styles.png">ALL positions</a><br>
+    <a href="https://www.csssolid.com/images/csspositions/css-position-all.png">Visuals differences</a>
+</body>
+
+</html>

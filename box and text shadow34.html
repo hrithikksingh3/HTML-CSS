@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 13px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: blanchedalmond;
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 3px 4px gray;    */
+            /* box-shadow: -10px -12px  gray; */
+
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 7px 5px 10px pink; */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: -7px -5px 10px 34px rgba(49, 60, 49, 0.5); */
+            /* Box shadow increase inside the box  */
+            box-shadow: inset 3px 5px green;
+            /* for multiple shadows  */
+            box-shadow: 3px 5px green, 4px 6px red;
+        
+            text-align: center;
+        }
+        .card h2{
+            /* text-shadow : offset x offset y color */
+            /* text-shadow: 2px 3px white; */
+
+            /* text-shadow : offset x offset y blur color */
+            text-shadow: 2px 3px 9px rgb(8, 8, 8);
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is c++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius alias praesentium a quae corrupti vitae
+                placeat veniam et minus officiis, debitis, quos libero hic beatae magni voluptates nam quibusdam optio
+                eum consectetur officia aperiam?</p>
+        </div>
+        <div class="card" id="card2">
+
+            <h2>This is html course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius alias praesentium a quae corrupti vitae
+                placeat veniam et minus officiis, debitis, quos libero hic beatae magni voluptates nam quibusdam optio
+                eum consectetur officia aperiam?</p>
+        </div>
+        <div class="card" id="card3">
+
+            <h2>card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius alias praesentium a quae corrupti vitae
+                placeat veniam et minus officiis, debitis, quos libero hic beatae magni voluptates nam quibusdam optio
+                eum consectetur officia aperiam?</p>
+        </div>
+    </div>
+</body>
+
+</html>

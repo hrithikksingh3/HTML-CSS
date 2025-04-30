@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+img{
+    width: 64px;
+    display: block;
+    margin: auto;
+}
+
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+header{
+    border: 2px solid red;
+    width: 1080px;
+    margin: auto;
+}
+.box{
+    border: 2px solid black;
+    margin: 4px auto;
+    padding: 29px;
+    background-color: gray;
+    display: inline-block;
+    width: 33%;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+    </style>
+</head>
+<body>
+    <header class="top">
+     <img src="data:image/jpeg;base64,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" alt="Hrithik">
+    <h3>Welcome to Hrithik's Blog</h3>
+    </header>
+    <div class="container">
+    <div class="box">
+        <h4 class="heading">HEADING</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam eius, saepe voluptas consequatur ad cum libero qui eligendi est debitis tenetur doloribus vel alias culpa ipsa nesciunt deserunt cupiditate possimus molestiae soluta? Enim repellendus eum id? Necessitatibus reiciendis esse dignissimos eligendi nulla amet.</p>
+    </div>
+
+    <div class="box">
+        <h4 class="heading">HEADING</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam eius, saepe voluptas consequatur ad cum libero qui eligendi est debitis tenetur doloribus vel alias culpa ipsa nesciunt deserunt cupiditate possimus molestiae soluta? Enim repellendus eum id? Necessitatibus reiciendis esse dignissimos eligendi nulla amet.</p>
+    </div>
+
+    <div class="box">
+        <h4 class="heading">HEADING</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam eius, saepe voluptas consequatur ad cum libero qui eligendi est debitis tenetur doloribus vel alias culpa ipsa nesciunt deserunt cupiditate possimus molestiae soluta? Enim repellendus eum id? Necessitatibus reiciendis esse dignissimos eligendi nulla amet.</p>
+    </div>
+</div>
+</body>
+</html>

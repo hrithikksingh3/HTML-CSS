@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligiblity for driving</title>
+<!-- CSS  -->
+    <style>
+.container{
+    background-color: rgb(193, 127, 180);
+    width: 500px;
+    height: 600px;
+    position: relative;
+    left: 200px;
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 29px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.inputs{
+    padding: 10px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.btn:hover{
+    background-color: transparent;
+}
+
+
+
+    </style>
+
+
+<!-- HTML  -->
+</head>
+<body>
+    <div class="container">
+            <form action="backend.php">
+                <div class="inputs">
+                    <label for="Name" >Name: </label>
+                    <input type="text" id="Name" placeholder="Enter your name">
+
+                </div>
+                <div class="inputs">
+
+                    <label for="Age">Age: </label>
+                    <input type="text" id="Age" placeholder="Enter your age: ">
+                </div>
+                <div class="inputs">
+<button class="btn" type="submit">
+    Submit
+</button>
+<div class="inputs">
+    <label for="output" id="_output"></label>
+</div>
+                </div>
+
+            </form>
+
+    </div>
+
+
+<!-- JS  -->
+    <script>
+let Eligiblity = document.getElementById("Age");
+    </script>
+</body>
+</html>
+
+<!-- Incomplete  -->

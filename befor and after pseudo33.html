@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Befor and After Pseudoselectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    
+}
+header::before{
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+.navigation{
+    display: flex;
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+li{
+    list-style: none;
+    padding: 20px 23px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    height: 300px;
+    margin : 3px 24px;
+    align-items: center;
+    justify-content: center;
+}
+/* section::before{
+    content: "this is a content"
+} */
+
+/* section::after{
+    content: "this is another content"
+} */
+h1{
+    font-size: 4rem;
+}
+p{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to Coding world</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, omnis impedit sed hic nemo, facere eius consequuntur debitis dignissimos optio commodi ducimus rem maiores unde deserunt explicabo minus distinctio sint quia vitae molestiae velit. Nulla fugiat necessitatibus inventore veritatis eum incidunt, placeat repellendus enim?</p>
+        </section>
+        
+</body>
+</html>
+
+
+

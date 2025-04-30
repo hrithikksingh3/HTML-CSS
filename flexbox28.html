@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Tutorial</title>
+    </head>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the container as flex box  */
+            display: flex;
+            /* Fle properties for flex container */
+             flex-direction: row;  /* by default */
+            flex-direction: column;
+             flex-direction: column-reverse; 
+             flex-direction: row-reverse;
+             flex-direction: row;
+             /* flex-wrap: nowrap; = by default */
+             flex-wrap: wrap;    /* used for responsive wrap the elements */
+             /* flex-wrap: wrap-reverse; revese the wrap Use less likely */
+
+             /* flex-flow: row-reverse wrap; Its a shorthand to write both properties together flex direction:  and flex wrap; */
+            
+             /*justify-content: center;   Contents will be centered 
+
+              justify-content: space-between; /*no space in corners but equal spaces between same boxes  */
+
+              /*justify-content: space-evenly;  Equal spaces between boxes and corners also*/
+
+              /*justify-content: space-around;  Equal space of every box on both sides left and right */
+
+              /* align-items: center;  Vertically centers items*/
+              /* align-items: flex-end;  = go down  */
+              /* align-items: flex-start; = by default and go up  */
+              /* align-items: stretch; = create vertically evenlly spaces between elements when resoponsive testing */
+
+
+              
+        }
+        .item{
+            background-color: tomato;
+            border: 2px solid rgb(13, 214, 80);
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+        /* Flex prpperties for a flex item  */
+        
+        #item1{
+            /* Higher the order , later it shows up in the container  */
+            order: 2;
+            /* stretch while responsive testing */
+            /* flex-grow: 3; */
+        }
+        #item2{
+            /* flex-grow: 2; */
+
+           /* negative number is not acceptable in flex grow thats why flex shrink is used  */
+            /* flex-shrink: 3; */
+            flex-basis: 150px;
+            /* when flex-direction is set to row it will control width */
+            /* when flex-direction is set to coloumn it will control height  */
+        }
+        #item3{
+            /* flex shorthand flex: flex grow flex shirnk flex basis ; */
+            /* flex: 2 2 250px; */
+            /* align-self:  is used to align single element */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+
+
+    </style>
+    <body>
+        <h1>This is Flexbox </h1>
+        <div class="container">  <!--  Flex container -->
+
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+         <div class="item" id="item3">Third Box</div> <!--  Flex Items -->
+        <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div>
+    </div>
+    </body>
+    </html>

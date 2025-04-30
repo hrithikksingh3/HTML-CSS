@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string functions</title>
+    <style>
+        .stringg{
+            background-color: beige;
+            border: 2px solid gray;
+        }
+    h1{
+     font-size: 4em;
+     text-align: center;
+     text-decoration: underline;
+    }
+    h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+</style>
+</html>
+
+<body>
+    <div class="stringg">
+        <h1>This is about string functions in Javascript</h1> 
+        <h3>Open the console to learn more...</h3>
+    </div>
+
+    <script>
+        var str = "This is a string"
+        console.log(str);
+
+        // First occurrence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // Last occurrence of a substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string by slicing
+        var substr = str.slice(1, 5);
+        console.log(substr);
+        // slice(n, m) : n = strating index, m = ending index 
+        // slicing occurs from "n" to "m-1"
+
+
+        // Substring from a string by substr
+        var substr1 = str.substr(1, 5);
+        console.log(substr1);
+     //substr(n, m) : n = strating index, m = length of slicing 
+        // slicing stars from "n" and go to the till "m" value 
+
+
+        // To replace characters from a string 
+        var replaced = str.replace('a string','hrithik');
+        // console.log(str);
+        console.log(replaced);
+
+        // To convert a string in Uppercase and Lowercase 
+        console.log(str.toUpperCase());
+        console.log(str.toLocaleLowerCase());
+
+        // For concating two or more strings 
+        var newString = str.concat(' New String');
+        console.log(newString);
+        // or you can use 
+        var newstr = str+" New String.";
+        console.log(newstr);
+
+        // it will trim the spaces from starting and ending of the string
+        var str_with_whitespaces = "     this is          string          ";
+        console.log(str_with_whitespaces);
+        console.log(str_with_whitespaces.trim());
+
+        // Extracting characters from a string 
+        var char3 = str.charAt(3);
+        // to print character code 
+        // var char3 = str.charCodeAt(3);
+        console.log(char3);
+
+        // slicing shortcut 
+        console.log(str[2]);
+
+
+
+    </script>
+</body>
+
+<html>

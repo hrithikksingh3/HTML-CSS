@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            background-color: yellow;
+        }
+
+        .box {
+            background-color: gray;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation name  */
+            animation-name: hrithik;
+            /* kitni der me animation chal jaega pura  */
+            animation-duration: 8s;
+            /* kitni baar chalega (we can set infinity also)  */
+            animation-iteration-count: 300;
+           /* animation: aage jaake ruk jaega whi */
+            /* animation-fill-mode: forwards;  */
+            /* animation ek baar chal ke ruk jaega waps aake picche  */
+            /* animation-fill-mode: alternate;  */
+            /* animation-timing-function: ease - 4 types ki hote hai aur iss hum speed contron kar skte hai  */
+            /* animation-timing-function: ease-in; */
+            /* delay time ke baad animation chalega */
+            /* animation-delay: 3s; */
+            /* animation: ko reverse kar dega */
+            /* animation-direction: reverse; */
+
+            /* Shorthand for animation  */
+            /* animation: animation-name animation-duration animation-timing-function animaiton-delay animation-iteration-count animation-fill-mode; */
+            animation: hrithik 5s ease-in 1s 12 backwards;
+
+            
+        }
+        /* ham iss way me bhi animation ko likh skte hai  */
+@keyframes hrithik{
+    0%{
+        top:0px;
+        left:0px
+    }
+    25%{
+        top:250px;
+        left:0px;
+    }
+    75%{
+        top:250px;
+        left:250px;
+    }
+    100%{
+        top:0px;
+        left:250px;
+
+    }
+}
+        @keyframes hrithik1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+
+</html>
