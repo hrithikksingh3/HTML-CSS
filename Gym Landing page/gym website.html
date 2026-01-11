@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrithik's Fitness</title>
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset  */
+    /* *{   
+        font-family: 'Chivo Mono', monospace;
+    } */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('bg.jpg');
+        color: white;
+        background-size: 3000px;
+        /* height: 1900px; */
+        background-repeat: no-repeat;
+
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 18px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 40%;
+        margin: 18px auto;
+
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 27px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        width: 114%;
+        margin: 18px -25px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    .left img {
+        width: 100px;
+        filter: invert(100%);
+    }
+
+    .btn {
+        margin: 5px 9px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        position: relative;
+        left: 10px;
+
+    }
+
+    .btn:hover {
+        background-color: rgba(128, 128, 128, 0.444);
+
+    }
+
+    .container {
+        border: 2px solid rgb(255, 255, 255);
+        margin: 100px 78px;
+        padding: 50px 50px;
+        width: 33%;
+        border-radius: 20px;
+        position: static;
+    }
+
+    .formgrp input {
+        margin: 5px auto;
+        text-align: center;
+        width: 316px;
+        padding: 5px;
+        border: 2px solid #000;
+        display: block;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: 15px auto;
+        display: inline-block;
+    }
+    .reset{
+        margin: 2px 3px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        position: relative;
+        left: 143px;
+    }
+    .reset:hover{
+        background-color: rgba(128, 128, 128, 0.444);
+    }
+    .submit{
+        margin: 2px 3px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        position: relative;
+        left: 127px;
+    }
+    
+.submit:hover{
+    background-color: rgba(128, 128, 128, 0.444);
+}
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gym.png" alt="logo">
+            <div>Hrithik Fitness</div>
+
+
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>JOIN THE BEST GYM OF DELHI </h2>
+        <form action="backend.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="formgrp">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="formgrp">
+                <input type="number" name="" placeholder="Enter your Number">
+            </div>
+
+            <div class="formgrp">
+                <input type="email" name="" placeholder="Enter your E-mail">
+            </div>
+
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="submit" type="submit">Submit</button>
+            <button class="reset" type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>

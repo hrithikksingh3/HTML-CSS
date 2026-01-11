@@ -28,6 +28,8 @@ All concepts are saved as **topic-wise practical files** with examples and exper
 | [16](#-topic-16--animations--transitions) | Animations & Transitions | Smooth UI effects |
 | [17](#-topic-17--css-variables--transforms) | Modern CSS | Variables & transforms |
 | [18](#-topic-18--javascript-basics) | JavaScript Basics | Strings, arrays, loops, functions |
+| [19](#-Restaurant--Landing--Page) | Project | Landing page using HTML and CSS |
+| [20](#-Gym--Landing--Page) | Project | Landing page using HTML and CSS |
 | [Docs](#-docs--pdf-material) | PDF Materials | Notes and supporting docs |
 
 ---
@@ -39,7 +41,9 @@ HTML-CSS
 │
 ├── Docs/
 │ └── (PDF learning material)
-│
+├── Gym Landing Page/
+├── Restaurant Landing Page/
+├
 ├── basic syn1.html
 ├── p and h tags2.html
 ├── anchor and image3.html
