@@ -8,29 +8,31 @@ All concepts are saved as **topic-wise practical files** with examples and exper
 
 ## 📚 Table of Contents
 
+
 | # | Topic | Description |
 |---|--------|-------------|
-| [1](#-topic-1--basic-html-syntax) | Basic HTML Syntax | Structure of HTML page & essentials |
-| [2](#-topic-2--paragraphs--headings) | Paragraphs & Headings | `<p>`, `<h1>` to `<h6>` fundamentals |
+| [1](#-topic-1--basic-html-syntax) | Basic HTML Syntax | HTML boilerplate structure & essentials |
+| [2](#-topic-2--paragraphs-and-headings) | Paragraphs and Headings | `<p>`, `<h1>`–`<h6>` fundamentals |
 | [3](#-topic-3--anchors--images) | Anchors & Images | Links, images, and attributes |
-| [4](#-topic-4--lists) | Lists | Ordered & unordered lists |
+| [4](#-topic-4--lists) | Lists | Ordered, unordered & nested lists |
 | [5](#-topic-5--tables) | Tables | Creating structured table layouts |
 | [6](#-topic-6--forms--inputs) | Forms & Inputs | Form elements and input types |
-| [7](#-topic-7--entities) | HTML Entities | Entities & special characters |
+| [7](#-topic-7--inline--block-elements) | Inline & Block Elements | Block vs inline behavior |
 | [8](#-topic-8--ids--classes) | IDs & Classes | Targeting elements efficiently |
-| [9](#-topic-9--semantic-tags) | Semantic Tags | SEO-friendly HTML structure |
-| [10](#-topic-10--inline--internal--external-css) | CSS Linking | Inline, internal and external CSS |
-| [11](#-topic-11--css-selectors) | CSS Selectors | All types of selectors |
-| [12](#-topic-12--pseudo-selectors) | Pseudo Selectors | Hover, active, before/after etc. |
-| [13](#-topic-13--box-model) | Box Model | Margin, padding, border |
-| [14](#-topic-14--layouts) | Layout Systems | Float, Flexbox, Grid |
-| [15](#-topic-15--responsive-design) | Responsive Design | Media queries and responsive UI |
-| [16](#-topic-16--animations--transitions) | Animations & Transitions | Smooth UI effects |
-| [17](#-topic-17--css-variables--transforms) | Modern CSS | Variables & transforms |
+| [9](#-topic-9--html-entities) | HTML Entities | Entities & special characters |
+| [10](#-topic-10--semantic-tags) | Semantic Tags | SEO-friendly HTML structure |
+| [11](#-topic-11--css-basics-inlineinternalexternal) | CSS Basics (Inline/Internal/External) | Linking and applying CSS |
+| [12](#-topic-12--css-selectors) | CSS Selectors | Element, class, id selectors |
+| [13](#-topic-13--chrome-devtools) | Chrome DevTools | Inspect, debug, live edit |
+| [14](#-topic-14--css-box-model) | CSS Box Model | Margin, padding, borders |
+| [15](#-topic-15--layouts) | Layouts | Float, Flexbox, Grid |
+| [16](#-topic-16--responsive-design) | Responsive Design | Media queries & responsive UI |
+| [17](#-topic-17--animations--modern-css) | Animations & Modern CSS | Transitions, animations, transforms |
 | [18](#-topic-18--javascript-basics) | JavaScript Basics | Strings, arrays, loops, functions |
-| [19](#-Restaurant--Landing--Page) | Project | Landing page using HTML and CSS |
-| [20](#-Gym--Landing--Page) | Project | Landing page using HTML and CSS |
+| [19](#-topic-19--restaurant-landing-page) | Restaurant Landing Page | Landing page using HTML and CSS |
+| [20](#-topic-20--gym-landing-page) | Gym Landing Page | Landing page using HTML and CSS |
 | [Docs](#-docs--pdf-material) | PDF Materials | Notes and supporting docs |
+
 
 ---
 
@@ -123,7 +125,7 @@ HTML-CSS
 
 ---
 
-### **📝 Topic 2 – Paragraphs & Headings**
+### **📝 Topic 2 – Paragraphs and Headings**
 - `<p>`, `<h1>`–`<h6>`
 - Basic text formatting and layout
 
@@ -131,7 +133,7 @@ HTML-CSS
 
 ---
 
-### **🖼️ Topic 3 – Anchors & Images**
+### **🖼️ Topic 3 – Anchors and Images**
 - `<a>` tags with `href`
 - `<img>` tags with `src`, `alt`, size attributes
 
@@ -288,6 +290,13 @@ HTML-CSS
 - `loops53.html`  
 - `alert52.html`  
 - `js dev console45.html`
+
+
+### **⚡ Topic 19 – Restaurant Landing page**
+- Landing page using HTML and CSS 
+
+### **⚡ Topic 20 – Gym Landing page**
+- Landing page using HTML and CSS 
 
 ---
 
